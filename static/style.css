@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.search-bg
+{
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.gradient-bg
+{
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 0%);
+}
+
+.gradient-bg a
+{
+    color: white;
+    text-decoration-color: white;
+}
+.gradient-bg a:visited
+{
+    color: white;
+}
+.gradient-bg a:active
+{
+    color:white;
+}
+.gradient-bg a:hover
+{
+    color: grey;
+}
+.container_1
+{
+    width:60%;
+    text-align: left;
+}
+.container_2
+{
+    width:30%;
+}
+.box
+{
+    width:80%;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:0;
+}
+.wrap
+{
+    padding-top: 5rem;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    width:70%;
+    margin:auto;
+}
+main
+{
+    padding-top:5rem;
+}
+#progress
+{
+    text-align:center;
+}
+#delete
+{
+    text-align:center;
+}
+#progress_list
+{
+    text-align:center;
+}
+.group
+{
+    width:40%;
+    margin:auto;
+}
