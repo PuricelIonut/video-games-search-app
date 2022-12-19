@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endfor %}
+
+    <form action="/login" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto text-white bg-dark" id="username" name="username" placeholder="Username" type="text" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto text-white bg-dark" id="password" name="password" placeholder="Password" type="password" required>
+        </div>
+        <h6><a style="text-decoration-color:black;color:black" href="/change">Change your password</a></h6>
+        <button  class="btn btn-primary bg-dark" type="submit">Log In</button>
+    </form>
+{% endblock %}
